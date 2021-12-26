@@ -8,7 +8,7 @@ function notifyFormNewAnswerSimple(e) {
   /*送受信関連変数の設定*/
   const mailFrom      = 'sender@example.com'; /*送信者（スクリプトを実行するGoogleアカウントのGmailにおいて送信者として使用可能なものを指定する）*/
   const mailFromName  = 'Example Sender'; /*送信者の名称（氏名や団体名など、日本語も可）*/
-  const mailTo        = 'recipient@example.com'; /*主たる受取人（Google App Scriptの制限に抵触しないようToに設定するメールアドレスの数は最小限に抑えたほうがよい）*/
+  const mailTo        = 'recipient@example.com'; /*主たる受取人（Google Apps Scriptの制限に抵触しないようToに設定するメールアドレスの数は最小限に抑えたほうがよい）*/
   const mailCc        = ''; /*写し受信者（複数列挙はカンマで、必要なければ空欄でよい）*/
   const mailBcc       = ''; /*秘密受信者（複数列挙はカンマで、必要なければ空欄でよい）*/
   const mailReplyTo   = ''; /*返信先（必要なければ空欄でよい）*/
