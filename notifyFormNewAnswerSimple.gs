@@ -43,7 +43,7 @@ function notifyFormNewAnswerSimple(e) {
     formAnswer += '【'+ question + '】' + '\n' + '　' + answer + '\n\n'
   }
 
-  /*初めに設定した変数と、直上で整形したフォームの回答文字列とを、結合してメール本文を完成させる*/
+  /*初めに設定した変数と直上で整形したフォームの回答文字列とを結合してメール本文を完成させる*/
   const body = introduction+formAnswer+closing+signature;
 
   /*以上を踏まえてメールを送信する*/
