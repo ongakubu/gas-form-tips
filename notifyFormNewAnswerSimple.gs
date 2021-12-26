@@ -5,6 +5,9 @@
 function notifyFormNewAnswerSimple(e) {
   Logger.log('notifyFormNewAnswerSimple(e) debug start')
 
+  /*フォームに送信された回答を取得し、responsesオブジェクトに格納する*/
+  const responses = e.response.getItemResponses();
+
   /*送受信関連変数の設定*/
   const mailFrom      = 'sender@example.com'; /*送信者（スクリプトを実行するGoogleアカウントのGmailにおいて送信者として使用可能なものを指定する）*/
   const mailFromName  = 'Example Sender'; /*送信者の名称（氏名や団体名など、日本語も可）*/
@@ -31,9 +34,6 @@ function notifyFormNewAnswerSimple(e) {
     + ' フォームの管理担当者\n'
     + ' sender@example.com\n'
     + '==============================\n\n';
-
-  /*フォームに送信された回答を取得し、responsesオブジェクトに格納する*/
-  const responses = e.response.getItemResponses();
 
   /*responsesオブジェクトに格納されたフォームの回答を、人間にとって可読性の高い文字列に整形する*/
   for (var i = 0; i < responses.length; i++) {
